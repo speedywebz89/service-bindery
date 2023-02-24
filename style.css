@@ -1,0 +1,701 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/********************** HEADER-HOME************************/
+.home {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(images/header-img.jpeg) no-repeat center center / cover;
+}
+/* navbar */
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  padding: 30px;
+  transition: all 0.7s;
+}
+.menu-item {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color 0.5s;
+}
+.menu-item:hover {
+  color: #00a2e2;
+  font-style: italic;
+}
+.nav-active {
+  color: #6f95a6;
+}
+.line1,
+.line2,
+.line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.4s;
+}
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line2 {
+  opacity: 0;
+}
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.custom-navbar {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+}
+.nav-logo {
+  position: relative;
+  height: 50px;
+  width: 325px;
+}
+/* end of navbar */
+/* banner */
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.banner-heading {
+  animation-name: anim;
+  animation-duration: 4s;
+  text-align: center;
+}
+.banner-par {
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  text-align: center;
+}
+.service {
+  color: #00a2e2;
+}
+/*HERO BUTTON*/
+.hero-btn {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #00a2e2;
+  color: #fff;
+  border-radius: 7px;
+}
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: solid 1px #ffffff;
+  border-radius: 0px;
+  font-style: italic;
+}
+/*END OF HERO BUTTON*/
+@keyframes anim {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.services-icons {
+  color: #00a2e2;
+}
+/* end of banner */
+/* end of header */
+
+/****************SERVICES PAGE*****************/
+
+/* Flex items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Flex columns */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 500px;
+  margin-top: 0px;
+  background-color: #00a2e2;
+}
+
+/* images for the two column sections*/
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.flex-columns p {
+  margin: 10px 0;
+  color: #fff;
+}
+.carousel-inner {
+  height: 500px;
+  margin-bottom: 20px;
+}
+.carousel-item {
+  height: 100%;
+}
+
+/**********SERVICES HEADER***********/
+
+.services-header {
+  height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(images/hero-img.jpg) no-repeat center center / cover;
+  background-position: 50% 3%;
+}
+
+.banner-services {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.btn-outline {
+  background-color: #fff;
+  padding: 7px 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.fa-file {
+  color: #00a2e2;
+}
+
+.btn-outline:hover {
+  background-color: #343a40;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #00a2e2;
+  padding: 7px 30px;
+  margin-top: 15px;
+}
+
+.btn-primary:hover {
+  color: #00a2e2;
+  background-color: white;
+}
+
+/*END OF SERVICES HEADER*/
+
+.section-line-services {
+  position: relative;
+  height: 5px;
+  width: 15%;
+  background-color: #00a2e2;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+.bindery {
+  color: #00a2e2;
+}
+
+.services-heading {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: #00a2e2;
+  width: 70%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+.services-heading:hover {
+  opacity: 1;
+}
+
+.services-h {
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.UV {
+  color: #d7f09b;
+}
+/********SERVICES 2-COL PARAGRAPH********/
+.p-services {
+  font-size: 16px;
+}
+
+.fa-pencil {
+  color: rgb(72, 72, 72);
+}
+
+.h1-services {
+  color: #f3670a;
+}
+
+/***********END OF SERVICES PAGE*************/
+
+/* collection */
+.card-shadow {
+  box-shadow: 5px 8px 20px #444;
+}
+.heading {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: #222;
+  width: 70%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+.heading:hover {
+  opacity: 1;
+}
+/* end of collection */
+/* customers */
+.customers {
+  background: #151f20;
+}
+/*google*/
+h1.google {
+  font-family: "Montserrat";
+  font-size: 4rem;
+}
+.g {
+  color: #4285f4;
+}
+.o {
+  color: #ea4335;
+}
+.oy {
+  color: #fbbc05;
+}
+.l {
+  color: #34a853;
+}
+/* end of collection */
+/* pricing */
+.card-1,
+.card-2,
+.card-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(images/cases/cases2.jpg) center no-repeat / cover;
+  box-shadow: 7px 18px 50px #555;
+  max-width: 400px;
+}
+.card-list-item {
+  border-bottom: 1px groove #eee;
+  width: 55%;
+  margin: auto;
+}
+.price-card-button {
+  background: #00a2e2;
+  width: 200px;
+  border-radius: 7px;
+  box-shadow: 5px 8px 15px #4c4c4c;
+  transition: all 0.2s;
+}
+.price-card-button:hover {
+  background: #6c757d;
+  transform: translateY(-2px);
+  border: none;
+}
+.moveFromLeft {
+  animation-name: moveFromLeft;
+  animation-duration: 3s;
+}
+.moveFromRight {
+  animation-name: moveFromRight;
+  animation-duration: 3s;
+}
+.moveFromBottom {
+  animation-name: moveFromBottom;
+  animation-duration: 3s;
+}
+
+p.card-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #2d2d2d;
+  margin-top: 20px;
+}
+
+p.card-text:hover {
+  font-weight: 600;
+}
+
+.section-line {
+  height: 2px;
+  width: 40%;
+  background-color: #00a2e2;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 50%;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveFromBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*  end of pricing */
+
+/* mission */
+
+.fromLeft {
+  animation-name: fromLeft;
+  animation-duration: 4s;
+}
+.fromRight {
+  animation-name: fromRight;
+  animation-duration: 4s;
+}
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-140px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(140px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* end of mission */
+
+/**************************** ABOUT LIGHTBOX********************/
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/*FLEX GRID*/
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.img-about {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+}
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+/* END OF ABOUT LIGHTBOX */
+
+/* contact */
+
+#contact-a .text-fields {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message";
+  grid-gap: 2rems;
+  margin: auto auto;
+  width: 100%;
+}
+
+.contact-header {
+  height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(images/hero-img2.jpg) no-repeat center center / cover;
+  background-position: 50% 50%;
+}
+#contact-a .text-fields .name-input {
+  grid-area: name;
+  height: 65px;
+  font-size: 20px;
+}
+
+#contact-a .text-fields .subject-input {
+  grid-area: subject;
+  height: 65px;
+  font-size: 20px;
+}
+#contact-a .text-fields .email-input {
+  grid-area: email;
+  background-color: #fff;
+  font-size: 20px;
+}
+#contact-a .text-fields .phone-input {
+  grid-area: phone;
+  background-color: #fff;
+  font-size: 20px;
+}
+#contact-a .text-fields .message-input {
+  grid-area: message;
+  height: 200px;
+  background-color: #fff;
+  font-size: 20px;
+}
+#contact-a .text-fields .text-input {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  font-size: 20px;
+}
+/*********CONTACT BUTTON************/
+#contact-a button {
+  width: 50%;
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  background-color: #00a2e2;
+  color: white;
+}
+
+#contact-a button:hover {
+  background-color: #2d2d2d0b;
+  border: solid 2px #00a2e2;
+  color: white;
+  border-radius: 0px;
+  font-weight: bold;
+}
+
+/********* END CONTACT BUTTON************/
+
+#contact-b .contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+#contact-c h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #3d72a4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.section-title {
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.icon-info {
+  color: white;
+}
+
+/* end of contact */
+
+/* footer */
+.footer-link {
+  color: #92e0ff;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+.footer-link:hover {
+  color: #00a2e2;
+  text-decoration: none;
+}
+.fa:hover {
+  color: #4fbde8;
+  cursor: grab;
+  font-size: 26px;
+}
+
+.footer-icons {
+  font-size: 25px;
+}
+.fa-envelope {
+  color: rgb(234, 224, 205);
+}
+.fa-facebook-square {
+  color: #4267b2;
+}
+.fa-linkedin {
+  color: #4298c6;
+}
+.fa-youtube {
+  color: #f74949;
+}
+.footer-copy {
+  font-size: 14px;
+}
+.speedy {
+  color: rgb(255, 162, 0);
+}
+.speedy:hover {
+  color: rgb(235, 183, 87);
+  text-decoration: none;
+}
+/* end of footer */
+@media (max-width: 768px) {
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*contact page media queries*/
+
+@media (max-width: 640px) {
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+  }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 solid;
+  }
+  #contact-b div:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #contact-a .text-fields .email-input {
+    grid-area: email;
+    height: 65px;
+  }
+  #contact-a .text-fields .phone-input {
+    grid-area: phone;
+    height: 65px;
+  }
+  #contact-c h1 {
+    font-size: 2rem;
+  }
+}
+
+/*end contact page media queries*/
+
+@media (max-width: 500px) {
+  .flex-columns .column .column-1,
+  .flex-columns .column .column-2 {
+    height: 350px;
+    margin-top: 0px;
+    background-color: #00a2e2;
+  }
+  .carousel-inner {
+    height: 350px;
+  }
+}
