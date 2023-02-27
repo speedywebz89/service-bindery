@@ -1,15 +1,16 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 /********************** HEADER-HOME************************/
 .home {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/header-img.jpeg) no-repeat center center / cover;
 }
 /* navbar */
 .nav-menu {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
   padding: 30px;
   transition: all 0.7s;
 }
@@ -184,7 +185,6 @@ body {
 }
 .carousel-inner {
   height: 500px;
-  margin-bottom: 20px;
 }
 .carousel-item {
   height: 100%;
@@ -236,17 +236,25 @@ body {
 }
 
 /*END OF SERVICES HEADER*/
-
+/*SEPERATOR LINES*/
 .section-line-services {
   position: relative;
-  height: 5px;
+  height: 2px;
   width: 15%;
   background-color: #00a2e2;
   margin: auto;
   margin-top: 30px;
   border-radius: 50%;
 }
-
+.underline {
+  position: relative;
+  height: 2px;
+  width: 10%;
+  background-color: #00a2e2;
+  margin: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+}
 .bindery {
   color: #00a2e2;
 }
@@ -688,6 +696,8 @@ p.card-text:hover {
 
 /*end contact page media queries*/
 
+/*HOME PAGE @ MEDIA*/
+
 @media (max-width: 500px) {
   .flex-columns .column .column-1,
   .flex-columns .column .column-2 {
@@ -697,5 +707,109 @@ p.card-text:hover {
   }
   .carousel-inner {
     height: 350px;
+  }
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  /*HERO SECTION*/
+  .nav-logo {
+    height: 50px;
+    width: 285px;
+  }
+  .banner-heading {
+    font-size: 42px;
+    margin-top: 100px;
+  }
+
+  .banner-par {
+    font-size: 14px;
+  }
+  /*OUR SERVICES SECTION*/
+  .underline {
+    position: relative;
+    height: 2px;
+    width: 45%;
+    background-color: #00a2e2;
+    margin: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  .display-4 {
+    font-size: 36px;
+    margin: 0px;
+  }
+  .lead {
+    font-size: 15px;
+  }
+  .s-heading {
+    font-size: 36px;
+  }
+  .text-muted {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  .carton-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  /*CARDS*/
+  .card-text {
+    font-size: 12px;
+  }
+  /*google reviews*/
+
+  h1.google {
+    font-size: 31px;
+  }
+  .google-car {
+    height: 460px;
+  }
+  .google-par {
+    font-size: 15px;
+  }
+
+  /*ANIMATED CARDS*/
+  .mission-heading {
+    font-size: 39px;
+  }
+  .mission-p {
+    font-size: 18px;
+  }
+  .m-txt {
+    font-size: 23px;
+  }
+  /*FOOTER HOME*/
+  .footer-copy {
+    font-size: 11px;
+  }
+  /***********SERVICES PAGE*************/
+  .services-h1 {
+    font-size: 28px;
+  }
+  .section-line-services {
+    width: 50%;
+    height: 2px;
+  }
+
+  .flex-columns .column .column-1,
+  .flex-columns .column .column-2 {
+    height: 470px;
+    background-color: #00a2e2;
+
+    margin-top: 5px;
+  }
+  .carousel-inner {
+    height: 470px;
+  }
+  .services-h2 {
+    margin-top: 20px;
+  }
+  .btn-outline {
+    margin-bottom: 60px;
+  }
+  .services-fptb {
+    font-size: 19px;
   }
 }
