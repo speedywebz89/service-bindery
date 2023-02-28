@@ -77,6 +77,9 @@ body {
 .service {
   color: #00a2e2;
 }
+.services-fptb {
+  font-size: 48px;
+}
 /*HERO BUTTON*/
 .hero-btn {
   position: relative;
@@ -109,7 +112,6 @@ body {
     opacity: 1;
   }
 }
-
 .services-icons {
   color: #00a2e2;
 }
@@ -126,7 +128,6 @@ body {
   text-align: center;
   height: 100%;
 }
-
 .flex-items > div {
   padding: 20px;
 }
@@ -135,7 +136,6 @@ body {
 .flex-columns.flex-reverse .row {
   flex-direction: row-reverse;
 }
-
 .flex-columns .row {
   display: flex;
   flex-direction: row;
@@ -143,14 +143,12 @@ body {
   width: 100%;
   margin: auto;
 }
-
 .flex-columns .column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
 }
-
 .flex-columns .column .column-1,
 .flex-columns .column .column-2 {
   height: 500px;
@@ -159,7 +157,6 @@ body {
 }
 
 /* images for the two column sections*/
-
 .flex-columns .column-2 {
   display: flex;
   flex-direction: column;
@@ -167,18 +164,16 @@ body {
   justify-content: center;
   padding: 50px;
 }
-
+/***********HEADINGS FOR TWO COLUMN SECTIONS ON SERVICES ****************/
 .flex-columns h2 {
   font-size: 40px;
   font-weight: 100;
   color: #fff;
 }
-
 .flex-columns h4 {
   margin-bottom: 10px;
   color: #fff;
 }
-
 .flex-columns p {
   margin: 10px 0;
   color: #fff;
@@ -191,14 +186,12 @@ body {
 }
 
 /**********SERVICES HEADER***********/
-
 .services-header {
   height: 75vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(images/hero-img.jpg) no-repeat center center / cover;
   background-position: 50% 3%;
 }
-
 .banner-services {
   position: absolute;
   top: 40%;
@@ -206,7 +199,6 @@ body {
   transform: translate(-50%, -50%);
   width: 80%;
 }
-
 .btn-outline {
   background-color: #fff;
   padding: 7px 30px;
@@ -214,22 +206,18 @@ body {
   margin-bottom: 20px;
   border-radius: 5px;
 }
-
 .fa-file {
   color: #00a2e2;
 }
-
 .btn-outline:hover {
   background-color: #343a40;
   border: none;
 }
-
 .btn-primary {
   background-color: #00a2e2;
   padding: 7px 30px;
   margin-top: 15px;
 }
-
 .btn-primary:hover {
   color: #00a2e2;
   background-color: white;
@@ -258,7 +246,6 @@ body {
 .bindery {
   color: #00a2e2;
 }
-
 .services-heading {
   position: absolute;
   top: 70%;
@@ -274,25 +261,25 @@ body {
 .services-heading:hover {
   opacity: 1;
 }
-
 .services-h {
   font-size: 4rem;
   font-style: italic;
 }
-
 .UV {
-  color: #d7f09b;
+  color: #343a40;
+  font-style: italic;
 }
 /********SERVICES 2-COL PARAGRAPH********/
 .p-services {
   font-size: 16px;
 }
-
 .fa-pencil {
   color: rgb(72, 72, 72);
 }
-
 .h1-services {
+  color: #00a2e2;
+}
+.perfect {
   color: #00a2e2;
 }
 
@@ -389,7 +376,6 @@ p.card-text {
 p.card-text:hover {
   font-weight: 600;
 }
-
 .section-line {
   height: 2px;
   width: 40%;
@@ -398,7 +384,6 @@ p.card-text:hover {
   margin-top: 5px;
   border-radius: 50%;
 }
-
 @keyframes moveFromLeft {
   0% {
     transform: translateX(-100px);
@@ -670,7 +655,6 @@ p.card-text:hover {
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message";
   }
-
   #contact-b div {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
@@ -715,8 +699,8 @@ p.card-text:hover {
   }
   /*HERO SECTION*/
   .nav-logo {
-    height: 50px;
-    width: 250px;
+    height: 40px;
+    width: 255px;
   }
   .banner-heading {
     font-size: 42px;
@@ -800,12 +784,17 @@ p.card-text:hover {
     height: 470px;
   }
   .services-h2 {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .btn-outline {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
   .services-fptb {
     font-size: 17px;
+  }
+  .flex-columns h2 {
+    font-size: 35px;
+    font-weight: 100;
+    color: #fff;
   }
 }
