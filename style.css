@@ -720,13 +720,19 @@ p.card-text:hover {
     margin: 0 auto;
     border-radius: 50%;
   }
+
+  /************HERO HEADING***********/
+
   .display-4 {
-    font-size: 36px;
-    margin: 0px;
+    font-size: 38px;
+    margin-bottom: 10px;
   }
   .lead {
-    font-size: 15px;
+    font-size: 14px;
+    margin-bottom: 30px;
   }
+
+  /************END OF HERO HEADING***********/
   .s-heading {
     font-size: 36px;
   }
